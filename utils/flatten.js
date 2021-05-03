@@ -1,7 +1,20 @@
 const { is_primitive, is_array, is_object } = require("./types");
 
+/**
+ * A separator that will be used to mark object nested keys.
+ * @type {string}
+ */
 const SEPARATOR = ".";
 
+/**
+ * Returns flattened value if available.
+ * Passing the primitive value will result in the same value wrapped under "primitive_{number}" key.
+ *
+ * @param value Value to be flattened.
+ * @param key The initial key to be used.
+ * @param acc Accumulator where flattened key-value pairs will be stored.
+ * @returns {*}
+ */
 function flatten(value, key, acc) {
   if (is_primitive(value)) {
     if (0 === key.length) {

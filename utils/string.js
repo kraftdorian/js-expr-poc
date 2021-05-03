@@ -1,3 +1,14 @@
+/**
+ * Performs multi replace on a given string.
+ *
+ * @param haystack String where to search for things to replace.
+ * @param needles An array of strings to search for.
+ * @param needle_index Index of current needle used in search.
+ * @param replacers An array of strings to replace with.
+ * @param replacer_index Index of current replacer.
+ * @param acc Accumulator where the replaced string will be available.
+ * @returns {*}
+ */
 function recursive_multi_replace(haystack, needles, needle_index, replacers, replacer_index, acc) {
   const index = haystack.indexOf(needles[needle_index]);
 
