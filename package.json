@@ -1,0 +1,19 @@
+{
+  "name": "js-expr-poc",
+  "version": "0.0.1",
+  "description": "Very simple PoC of expression matching in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kraftdorian/js-expr-poc.git"
+  },
+  "author": "kraftdorian",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/kraftdorian/js-expr-poc/issues"
+  },
+  "homepage": "https://github.com/kraftdorian/js-expr-poc#readme"
+}
